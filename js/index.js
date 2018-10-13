@@ -25,7 +25,7 @@ var zipcodes = ["231", "0186", "35012", "7011", "01304"];
 * function that checks if zipcode parameter is a number and for length equal to 4 (presuming norwegian zip code length of 4) 
 *
 * @param  String   zipcode 		Zip code that will be checked 
-* @return Boolean  				Returns true if the parameter length is 4 and zipcode parameter is a number
+* @return Boolean  true/false	Returns true if the parameter length is 4 and zipcode parameter is a number
 */
 function isQualifiedZipcode(zipcode) {
 	if(zipcode.length == 4 && Number(zipcode)) return true;
@@ -40,7 +40,7 @@ function isQualifiedZipcode(zipcode) {
 *
 * @param  Boolean   isQualified  Boolean 
 * @param  String    zipcode 	 Zip code that will be used 
-* @return String   
+* @return String    logString    Final string for logging purpose
 */
 function logString(isQualified, zipcode) {
 	var logString = "Følgende nummer kvalifiserer som postnummer: " + zipCode;
