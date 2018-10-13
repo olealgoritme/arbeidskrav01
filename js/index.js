@@ -1,6 +1,6 @@
 /**
 * ARBEIDSKRAV 01
-* -- kodet av Ole Algoritme (C) 2018
+* -- av Ole Algoritme (C) 2018
 * 
 * OBS! All kommentering og variabelnavngiving er (selvfølgelig) gjort på engelsk.
 * 
@@ -28,8 +28,8 @@ var zipcodes = ["231", "0186", "35012", "7011", "01304"];
 * @return Boolean  				Returns true if the parameter length is 4
 */
 function isQualifiedZipcode(zipcode) {
-	if(zipcode.length != 4 && !Number(zipcode)) return false;
-		else return true;
+	if(zipcode.length == 4 && Number(zipcode)) return true;
+		return false;
 }
 
 
@@ -43,9 +43,8 @@ function isQualifiedZipcode(zipcode) {
 * @return String   
 */
 function logString(isQualified, zipcode) {
-	var logString = "Følgende nummer ";
-	logString = (!isQualified) ? "kvalifiserer ikke" : "kvalifiserer";
-	logString + " som postnummer: " + zipcode;
+	var logString = "Følgende nummer kvalifiserer som postnummer: " + zipCode;
+	if (!isQualified) logString = logString.substring(0, 28) + " ikke" + logString.substring(28);
 	return logString;
 }
 
