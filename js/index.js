@@ -29,7 +29,7 @@ var zipcodes = ["231", "0186", "35012", "7011", "01304"];
 */
 function isQualifiedZipcode(zipcode) {
 	if(zipcode.length == 4 && Number(zipcode)) return true;
-		return false;
+	return false;
 }
 
 
