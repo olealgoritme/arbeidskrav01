@@ -38,7 +38,7 @@ function isQualifiedZipcode(zipcode) {
 * function that concats the final string based on the result of the zipcode check,
 * and returns the final string
 *
-* @param  Boolean   isQualified  Boolean 
+* @param  Boolean   isQualified  Boolean representing zipcode qualification
 * @param  String    zipcode      Zip code that will be used 
 * @return String    logString    Final string for logging purpose
 */
